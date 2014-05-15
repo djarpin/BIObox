@@ -7,8 +7,8 @@ Biogeme runs easily within a Linux/UNIX environment, but has difficulties on Win
 
 The 'examples' folder includes two codes worth mentioning:
 
-1. 'nest_depth2.py' utilizes a slightly modified piece of Python code to estimate a multilevel nested logit (this functionality is not immediately obvious to execute in Biogeme).  This code is based on a non-functioning snippet originally posted to the Biogeme User Group by j_newman_60625.
-2. 'CreateBiogeme.py' automates a large portion of writing Pythonbiogeme scripts.  Further explanation is included below.
+1. `nest_depth2.py` utilizes a slightly modified piece of Python code to estimate a multilevel nested logit (this functionality is not immediately obvious to execute in Biogeme).  This code is based on a non-functioning snippet originally posted to the Biogeme User Group by [j_newman_60625](https://groups.yahoo.com/neo/groups/biogeme/conversations/messages/2377).
+2. `CreateBiogeme.py` automates a large portion of writing Pythonbiogeme scripts.  Further explanation is included below.
 
 Installation
 ------------
@@ -22,13 +22,13 @@ Installation
 7. Run `vagrant up`
 8. Run `vagrant ssh`
 9. Use something like [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) to log into your virtual machine with the ssh information given by the above
-10. Within PuTTY 'cd /vagrant'.  This folder is shared with Windows, so it should be straightforward to place existing codes and datasets there and run them using a command like 'pythonbiogeme filename dataset.dat'.
+10. Within PuTTY `cd /vagrant`.  This folder is shared with Windows, so it should be straightforward to place existing codes and datasets there and run them using a command like `pythonbiogeme filename dataset.dat`.
 
 CreateBiogemeCode.py
 --------------------
 
-Although powerful, Pythonbiogeme\'s syntax is quite verbose, particularly as the number of alternatives, variables, or latent classes increases.  In these cases, CreateBiogemeCode.py can be used to generate an approximate skeleton Pythonbiogeme code in a few short lines.  This skeleton code should technically run, but adjustments are likely to be necessary to ensure mathematical accuracy.  To test CreateBiogemeCode.py\'s functionality:
+Although powerful, Pythonbiogeme's syntax is quite verbose, particularly as the number of alternatives, variables, or latent classes increases.  In these cases, CreateBiogemeCode.py can be used to generate an approximate skeleton Pythonbiogeme code in a few short lines.  This skeleton code should technically run, but adjustments are likely to be necessary to ensure mathematical accuracy.  To test CreateBiogemeCode.py's functionality:
 
 1. Within PuTTY `cd /vagrant/examples`
-2. Run './test_create_biogeme_code.py'.  This code uses CreateBiogeme.py to create several example skeleton codes.
-3. Once the appropriate edits are made (see comments at the top of each file) use a command like 'pythonbiogeme mnl mock.dat' to run the 'mnl.py' code.
+2. Run `./test_create_biogeme_code.py`.  This code uses CreateBiogeme.py to create several example skeleton codes.
+3. Once the appropriate edits are made (see comments at the top of each file) use a command like `pythonbiogeme mnl mock.dat` to run the 'mnl.py' code.
