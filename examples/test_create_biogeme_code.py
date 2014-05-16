@@ -2,12 +2,22 @@
 
 from CreateBiogemeCode import *
 
+# Create a list of alternatives
+# In this case just the numbers 0 to 20
+# This could be a list of strings as well
+# However, this could create issues with the utility dictionary
 alternatives = list(range(21))
 
 # Simple MNL Model
+# Initiate a biogeme code object
 b = BiogemeCode(alternatives)
+# Specify the utility functional form shared across all alternatives
+# Anything in all uppercase is expected to be a coefficient
 b.add_utility('V# = ASC_# + PRICE * pct_price_change_#')
+# Adds a comment to the Biogeme file reminding the user to update
+# the code for mathematical accuracy
 b.add_comment('Need to fix a single ASC at 0')
+# Writes the biogeme object to a specified text file
 b.write_file('mnl.py')
 
 # Alternative specific price elasticity
