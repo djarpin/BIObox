@@ -5,7 +5,7 @@ Biogeme is an excellent open source package for estimating discrete choice model
 
 Biogeme runs easily within a Linux/UNIX environment, but has difficulties on Windows.  BIObox is meant to provide a light-weight virtual machine for use in prototyping and testing Biogeme code (a more powerful, optimized system is likely to be necessary for processing any substantially sized data or complex models).
 
-The `examples` folder includes two codes worth mentioning:
+The `examples` folder includes two codes worth mentioning as they are not explicitly tied to being used within BIObox and may be relevant more broadly:
 
 1. `nest_depth2.py` utilizes a slightly modified piece of Python code to estimate a multilevel nested logit (this functionality is not immediately obvious to execute in Biogeme).  This code is based on a non-functioning snippet originally posted to the Biogeme User Group by [j_newman_60625](https://groups.yahoo.com/neo/groups/biogeme/conversations/messages/2377).
 2. `CreateBiogeme.py` automates a large portion of writing Pythonbiogeme scripts.  Further explanation is included below.
