@@ -17,6 +17,6 @@ cd ../
 wget http://biogeme.epfl.ch/v23/biogeme-2.3.tar.gz
 tar xzf biogeme-2.3.tar.gz
 cd biogeme-2.3
-./configure --enable-bison --enable-python
+./configure --enable-bison --enable-python --with-python-dir=/usr/local/bin/
 make
 sudo make install
