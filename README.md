@@ -17,7 +17,7 @@ Installation
 2. Download and install [Vagrant](http://www.vagrantup.com/downloads.html)
 3. Create a new folder on your computer to hold shared documents for BIObox
 4. `cd` to this directory and run `vagrant init`
-5. Run `vagrant box add <db_sandbox> http://lyte.id.au/vagrant/sl6-64-lyte.box`
+5. Run `vagrant box add <BIObox> http://lyte.id.au/vagrant/sl6-64-lyte.box`
 6. Pull codes from this git repository into the new folder
 7. Run `vagrant up`
 8. Run `vagrant ssh`
