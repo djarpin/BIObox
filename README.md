@@ -22,7 +22,7 @@ Installation
 7. Run `vagrant up`
 8. Run `vagrant ssh`
 9. Use something like [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) to log into your virtual machine with the ssh information given by the above
-10. Within PuTTY `cd /vagrant`.  This folder is shared with Windows, so it should be straightforward to place existing codes and datasets there and run them using a command like `pythonbiogeme filename dataset.dat`.
+10. Within PuTTY `cd /vagrant`.  This folder is shared with Windows, so it should be straightforward to place existing codes and datasets there and run them using a command like `pythonbiogeme <filename> dataset.dat`.
 
 CreateBiogemeCode.py
 --------------------
